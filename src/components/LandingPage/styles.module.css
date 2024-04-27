@@ -1,0 +1,128 @@
+@font-face {
+    font-family: GohuFont14NerdFont;
+    src: url("../../fonts/GohuFont14NerdFont-Regular.ttf");
+}
+
+@font-face {
+    font-family: pixeboy;
+    src: url("../../fonts/Pixeboy.ttf");
+}
+
+.landingpagebg {
+    background-color: black;
+    height: 100vh;
+    /* background-image: url("../../images/Fareplaybuildings.svg"); */
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-size: cover;
+}
+
+.header {
+    height: 94px;
+    z-index: 1;
+    position: relative;
+}
+
+.logo {
+    position: absolute;
+    top: 37.66px;
+    left: 40px;
+}
+
+.nav {
+    position: absolute;
+    top: 37.66px;
+    right: 40px;
+    color: white;
+    z-index: 1;
+}
+
+.nav a {
+    font-family: GohuFont14NerdFont;
+    margin-left: 97px;
+}
+
+.menu {
+    position: absolute;
+    top: 184px;
+    right: 20%;
+    color: #FFFFFF;
+    font-family: pixeboy;
+    padding: 0px;
+    z-index: 1;
+}
+
+.menu button {
+    font-family: GohuFont14NerdFont;
+    font-size: 18px;
+    display: block;
+}
+
+.menu img {
+    display: inline;
+}
+
+.bottombtns button {
+    margin-right: 20px;
+    margin-top: 10px;
+    border-style: solid;
+    border-color: #FFFFFF;
+    border-width: 1px;
+    width: 120px;
+}
+
+.clouds {
+    position: absolute;
+    top: 0px;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.buildings{
+    position: absolute;
+    bottom: 0px;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.buildings img{
+    object-fit: cover;
+    height: 100vh;
+    width: 100vw;
+}
+
+@-webkit-keyframes move {
+    from {
+      transform: translateX(0vw);
+    }
+    to {
+      transform: translateX(10vw);
+    }
+  }
+
+@-webkit-keyframes moveagain {
+    from {
+      transform: translateX(-40vw);
+    }
+    to {
+      transform: translateX(0vw);
+    }
+  }
+
+.clouds1 {
+    object-fit: cover;
+    height: 100vh;
+    width: 100vw;
+    z-index: -5;
+    transform: translateX(-100vw);
+    animation: move 10s linear 0s infinite;
+}
+
+.clouds2 {
+    margin-top: 100px;
+    z-index: -5;
+    /* transform: translateX(-100vw); */
+    animation: moveagain 20s linear 0s infinite;
+}

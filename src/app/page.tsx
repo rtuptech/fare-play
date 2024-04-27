@@ -1,9 +1,10 @@
-import Link from 'next/link'
+import Image from "next/image";
+import LandingPage from "@/components/LandingPage/Landingpage";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <Link href="/landing">Home Page</Link>
-    </main>
+    <>
+      <LandingPage />
+    </>
   );
 }
